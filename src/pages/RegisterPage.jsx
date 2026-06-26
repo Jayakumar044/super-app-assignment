@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import useAppStore from "../store/useAppStore";
 import Button from "../components/ui/Button.jsx";
 import FloatingInput from "../components/ui/FloatingInput.jsx";
+import logoSrc from "../assets/logo.png";
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -64,7 +65,7 @@ export default function RegisterPage() {
             className="mb-12"
           >
             <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center p-4 mb-10 border border-primary/20 shadow-xl shadow-primary/10 group-hover:scale-105 transition-transform duration-500">
-              <img src="/src/assets/logo.png" alt="Skyway" className="w-full h-full object-contain" />
+              <img src={logoSrc} alt="Skyway" className="w-full h-full object-contain" />
             </div>
             <h1 className="text-6xl font-black text-slate-900 leading-[1.1] mb-8 tracking-tighter">
               Discover the <br />
